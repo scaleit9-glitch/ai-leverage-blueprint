@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="The complete 3-Phase mastermind to learn AI content creation, build an audience on social media and monetize traffic &#8212; from absolute zero to online income with AI. No experience needed. Faceless. Start with 0 audience.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Leverage Blueprint — Complete Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0f;--surface:#12121a;--surface2:#161622;--border:#1e1e2e;
+  --text:#e8e8ef;--dim:#8888a0;--muted:#55556a;
+  --green:#00e68a;--green-dim:rgba(0,230,138,0.12);--green-glow:rgba(0,230,138,0.25);
+  --purple:#7C6FF7;--purple-dim:rgba(124,111,247,0.12);
+  --coral:#D85A30;--coral-dim:rgba(216,90,48,0.12);
+  --blue:#378ADD;--blue-dim:rgba(55,138,221,0.12);
+  --amber:#f0c040;--amber-dim:rgba(240,192,64,0.12);
+  --red:#e94560;--red-dim:rgba(233,69,96,0.12);
+  --pink:#ff2d55;--pink-dim:rgba(255,45,85,0.12);
+  --teal:#0dd9a4;--teal-dim:rgba(13,217,164,0.12);
+}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999}
+
+.wrap{max-width:900px;margin:0 auto;padding:0 20px 80px}
+
+/* HERO */
+.hero{text-align:center;padding:60px 20px 50px;position:relative}
+.hero::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:300px;height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent)}
+.hero-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--green);border:1px solid var(--green-dim);padding:6px 22px;border-radius:100px;background:var(--green-dim);margin-bottom:24px}
+.hero h1{font-size:clamp(32px,6vw,56px);font-weight:800;line-height:1.05;letter-spacing:-2px;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero-sub{color:var(--dim);font-size:16px;max-width:580px;margin:0 auto 28px;font-weight:300;line-height:1.7}
+.hero-stats{display:flex;justify-content:center;gap:32px;flex-wrap:wrap}
+.hero-stat{text-align:center}
+.hero-stat-num{font-family:'DM Mono',monospace;font-size:28px;font-weight:700}
+.hero-stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px}
+
+/* CONTENT TYPES BAR */
+.content-types{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:40px 0 50px}
+.ct-card{background:var(--surface);border-radius:14px;padding:20px;border:0.5px solid var(--border);position:relative;overflow:hidden}
+.ct-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.ct-card.ugc::before{background:var(--coral)}
+.ct-card.ads::before{background:var(--amber)}
+.ct-card.inf::before{background:var(--purple)}
+.ct-icon{font-size:24px;margin-bottom:10px}
+.ct-name{font-size:15px;font-weight:600;margin-bottom:4px}
+.ct-card.ugc .ct-name{color:var(--coral)}
+.ct-card.ads .ct-name{color:var(--amber)}
+.ct-card.inf .ct-name{color:var(--purple)}
+.ct-desc{font-size:12px;color:var(--dim);line-height:1.55}
+
+/* FLOW ARROW */
+.flow-connector{text-align:center;padding:12px 0;font-size:24px;color:var(--muted);letter-spacing:8px}
+
+/* LEVEL SECTION */
+.level-section{margin-bottom:16px;position:relative}
+.level-header{display:flex;align-items:center;gap:18px;padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:16px;cursor:pointer;transition:all .3s;user-select:none}
+.level-header:hover{border-color:rgba(255,255,255,0.1);background:var(--surface2)}
+.level-section.open .level-header{border-radius:16px 16px 0 0}
+.level-num{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:18px;font-weight:700;color:#fff;flex-shrink:0}
+.level-info{flex:1}
+.level-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:4px}
+.level-title{font-size:20px;font-weight:700;letter-spacing:-0.5px}
+.level-sub{font-size:13px;color:var(--dim);margin-top:4px;font-weight:300}
+.level-meta{display:flex;gap:8px;flex-shrink:0;align-items:center}
+.level-pill{font-family:'DM Mono',monospace;font-size:10px;padding:4px 12px;border-radius:100px;font-weight:500;border:0.5px solid var(--border);color:var(--dim)}
+.level-chevron{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:transform .3s;font-size:18px}
+.level-section.open .level-chevron{transform:rotate(180deg)}
+
+.level-body{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.4,0,.2,1)}
+.level-section.open .level-body{max-height:4000px}
+.level-content{background:var(--surface);border:1px solid var(--border);border-top:none;border-radius:0 0 16px 16px;padding:0 24px 28px}
+
+/* LESSON GRID */
+.lessons-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin:20px 0 12px}
+.lessons-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin-bottom:16px}
+.lesson{background:var(--bg);border:0.5px solid var(--border);border-radius:10px;padding:12px 14px;transition:border-color .2s}
+.lesson:hover{border-color:rgba(255,255,255,0.12)}
+.lesson-num{font-family:'DM Mono',monospace;font-size:10px;font-weight:600;margin-bottom:4px}
+.lesson-name{font-size:13px;font-weight:500;color:var(--text);line-height:1.35}
+.lesson-time{font-size:10px;color:var(--muted);margin-top:4px}
+
+/* LEVEL 3 PATH CARDS */
+.paths-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}
+.path-card{background:var(--bg);border:0.5px solid var(--border);border-radius:12px;padding:16px;position:relative;overflow:hidden;transition:border-color .2s}
+.path-card:hover{border-color:rgba(255,255,255,0.12)}
+.path-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.path-card.ts::before{background:var(--pink)}
+.path-card.ag::before{background:var(--red)}
+.path-card.dp::before{background:var(--purple)}
+.path-card.af::before{background:var(--green)}
+.path-icon{font-size:22px;margin-bottom:8px}
+.path-name{font-size:14px;font-weight:600;margin-bottom:4px}
+.path-card.ts .path-name{color:var(--pink)}
+.path-card.ag .path-name{color:var(--red)}
+.path-card.dp .path-name{color:var(--purple)}
+.path-card.af .path-name{color:var(--green)}
+.path-desc{font-size:11px;color:var(--dim);line-height:1.5;margin-bottom:8px}
+.path-phases{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
+.path-best{font-size:10px;margin-top:8px;padding:3px 10px;border-radius:100px;display:inline-block;font-weight:500}
+.path-card.ts .path-best{background:var(--pink-dim);color:var(--pink)}
+.path-card.ag .path-best{background:var(--red-dim);color:var(--red)}
+.path-card.dp .path-best{background:var(--purple-dim);color:var(--purple)}
+.path-card.af .path-best{background:var(--green-dim);color:var(--green)}
+
+/* OUTCOME BOX */
+.outcome{background:var(--bg);border:0.5px solid var(--border);border-radius:10px;padding:14px 16px}
+.outcome-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+.outcome-text{font-size:13px;color:var(--dim);line-height:1.6}
+
+/* TIP BOX */
+.tip{border-radius:10px;padding:14px 16px;margin-top:12px;border-left:3px solid}
+.tip-green{background:rgba(0,230,138,0.04);border-color:var(--green)}
+.tip-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;font-weight:600}
+.tip-green .tip-label{color:var(--green)}
+.tip-text{font-size:12px;color:var(--dim);line-height:1.6}
+
+/* MASTER FLOW */
+.master-flow{display:flex;align-items:center;justify-content:center;gap:6px;margin:40px 0 20px;flex-wrap:wrap}
+.mf-box{padding:10px 18px;border-radius:10px;font-size:13px;font-weight:600;text-align:center;border:0.5px solid var(--border)}
+.mf-arrow{color:var(--muted);font-size:18px;flex-shrink:0}
+.mf-create{background:var(--purple-dim);color:var(--purple);border-color:rgba(124,111,247,0.3)}
+.mf-distribute{background:var(--blue-dim);color:var(--blue);border-color:rgba(55,138,221,0.3)}
+.mf-monetize{background:var(--green-dim);color:var(--green);border-color:rgba(0,230,138,0.3)}
+
+/* FOOTER */
+.footer{text-align:center;padding:40px 20px;border-top:0.5px solid var(--border);margin-top:40px}
+.footer-brand{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.footer-tagline{font-size:14px;color:var(--dim);font-weight:300}
+
+@media(max-width:600px){
+  .content-types,.paths-grid{grid-template-columns:1fr}
+  .lessons-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:20px}
+  .level-header{padding:18px 16px;gap:14px}
+  .level-num{width:44px;height:44px;font-size:15px;border-radius:11px}
+  .level-title{font-size:17px}
+  .level-meta{display:none}
+  .master-flow{flex-direction:column;gap:4px}
+  .mf-arrow{transform:rotate(90deg)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">AI Wealth Group</div>
+  <h1>AI Leverage <em>Blueprint</em></h1>
+  <div class="hero-sub">The complete 3-Phase mastermind to learn AI content creation, build an audience on social media and monetize traffic — from absolute zero to online income with AI. No experience needed. Faceless. Start with 0 audience.</div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-num" style="color:var(--purple)">3</div><div class="hero-stat-label">Levels</div></div>
+    <div class="hero-stat"><div class="hero-stat-num" style="color:var(--blue)">22</div><div class="hero-stat-label">Lessons</div></div>
+    <div class="hero-stat"><div class="hero-stat-num" style="color:var(--green)">4</div><div class="hero-stat-label">Income Paths</div></div>
+    <div class="hero-stat"><div class="hero-stat-num" style="color:var(--amber)">$0</div><div class="hero-stat-label">Start Cost</div></div>
+  </div>
+</div>
+
+<!-- 3 CONTENT TYPES -->
+<div class="content-types">
+  <div class="ct-card ugc">
+    <div class="ct-icon">🎬</div>
+    <div class="ct-name">AI UGC</div>
+    <div class="ct-desc">Authentic-looking video content made entirely by AI — product reviews, testimonials, brand promotions.</div>
+  </div>
+  <div class="ct-card ads">
+    <div class="ct-icon">📦</div>
+    <div class="ct-name">AI Ads</div>
+    <div class="ct-desc">Short promotional videos and product demos generated with AI. Eye-catching clips built to sell — no filming or editing experience needed.</div>
+  </div>
+  <div class="ct-card inf">
+    <div class="ct-icon">👤</div>
+    <div class="ct-name">AI Influencer</div>
+    <div class="ct-desc">A fully AI-generated persona — realistic face, voice, movement — that posts content and builds an audience without you ever appearing on camera.</div>
+  </div>
+</div>
+
+<!-- MASTER FLOW -->
+<div class="master-flow">
+  <div class="mf-box mf-create">Level 1 — Create</div>
+  <div class="mf-arrow">→</div>
+  <div class="mf-box mf-distribute">Level 2 — Distribute</div>
+  <div class="mf-arrow">→</div>
+  <div class="mf-box mf-monetize">Level 3 — Monetize</div>
+</div>
+
+<div class="flow-connector">⬇</div>
+
+<!-- LEVEL 0 -->
+<div class="level-section" onclick="toggleLevel(this)">
+  <div class="level-header">
+    <div class="level-num" style="background:linear-gradient(135deg,#555,#333)">L0</div>
+    <div class="level-info">
+      <div class="level-eyebrow" style="color:var(--muted)">Start Here</div>
+      <div class="level-title">Foundations</div>
+      <div class="level-sub">Welcome, mindset, course overview, and how to use the materials</div>
+    </div>
+    <div class="level-meta"><div class="level-pill">Orientation</div></div>
+    <div class="level-chevron">▾</div>
+  </div>
+  <div class="level-body">
+    <div class="level-content">
+      <div class="outcome" style="margin-top:16px">
+        <div class="outcome-label" style="color:var(--dim)">What you'll know</div>
+        <div class="outcome-text">How the 3-Phase system works, the 3 content types (AI UGC, AI Ads, AI Influencer), how to use the video lessons, quick reference scripts, and interactive HTML guides. You'll understand the full journey before you take the first step.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flow-connector">⬇</div>
+
+<!-- LEVEL 1 -->
+<div class="level-section" onclick="toggleLevel(this)">
+  <div class="level-header">
+    <div class="level-num" style="background:linear-gradient(135deg,var(--purple),#534AB7)">L1</div>
+    <div class="level-info">
+      <div class="level-eyebrow" style="color:var(--purple)">Creation</div>
+      <div class="level-title">AI Tools & Tech Stack</div>
+      <div class="level-sub">Every tool you need — what it does, why it matters, and exactly when to use it</div>
+    </div>
+    <div class="level-meta"><div class="level-pill">7 Lessons</div></div>
+    <div class="level-chevron">▾</div>
+  </div>
+  <div class="level-body">
+    <div class="level-content">
+      <div class="lessons-label">Lessons</div>
+      <div class="lessons-grid">
+        <div class="lesson"><div class="lesson-num" style="color:var(--purple)">1.1</div><div class="lesson-name">Tool Stack Overview</div><div class="lesson-time">8–12 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--blue)">1.2</div><div class="lesson-name">ChatGPT, Gemini & Claude</div><div class="lesson-time">15–20 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--coral)">1.3</div><div class="lesson-name">Higgsfield AI</div><div class="lesson-time">25–35 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--teal)">1.4</div><div class="lesson-name">ElevenLabs & Hedra</div><div class="lesson-time">10–12 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--red)">1.5</div><div class="lesson-name">CapCut</div><div class="lesson-time">12–15 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--amber)">1.6</div><div class="lesson-name">Kling & Nano Banana</div><div class="lesson-time">8–10 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--green)">1.7</div><div class="lesson-name">Notes & Organisation</div><div class="lesson-time">6–8 min</div></div>
+      </div>
+      <div class="outcome">
+        <div class="outcome-label" style="color:var(--purple)">By the end of Level 1</div>
+        <div class="outcome-text">You've created your first AI influencer character, generated your first AI video, edited it in CapCut with captions and music, and posted it online. You know the full creation pipeline: Script → Generate → Voice → Edit → Post. You have your 4-note organisation system set up.</div>
+      </div>
+      <div class="tip tip-green">
+        <div class="tip-label">Key skills unlocked</div>
+        <div class="tip-text">AI script writing (4 prompting rules + 6 ready-to-use prompts) · Face Lock method for consistent characters · Reverse Engineering method · Motion Control for realistic video · AI voiceover · Professional video editing · Content organisation system</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flow-connector">⬇</div>
+
+<!-- LEVEL 2 -->
+<div class="level-section" onclick="toggleLevel(this)">
+  <div class="level-header">
+    <div class="level-num" style="background:linear-gradient(135deg,var(--blue),#2060a0)">L2</div>
+    <div class="level-info">
+      <div class="level-eyebrow" style="color:var(--blue)">Distribution</div>
+      <div class="level-title">Marketing, Setup & Content Creation</div>
+      <div class="level-sub">How to get your AI content in front of the right audience and make it stick</div>
+    </div>
+    <div class="level-meta"><div class="level-pill">8 Lessons</div></div>
+    <div class="level-chevron">▾</div>
+  </div>
+  <div class="level-body">
+    <div class="level-content">
+      <div class="lessons-label">Lessons</div>
+      <div class="lessons-grid">
+        <div class="lesson"><div class="lesson-num" style="color:var(--purple)">2.1</div><div class="lesson-name">Algorithm Deep Dive</div><div class="lesson-time">8–10 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--blue)">2.2</div><div class="lesson-name">Niche Identity & Setup</div><div class="lesson-time">10–12 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--teal)">2.3</div><div class="lesson-name">US Phone Setup</div><div class="lesson-time">10–15 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--coral)">2.4</div><div class="lesson-name">Video Structure</div><div class="lesson-time">12–15 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--red)">2.5</div><div class="lesson-name">Viral Hooks (20 Formulas)</div><div class="lesson-time">12–15 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--amber)">2.6</div><div class="lesson-name">Captions & TikTok SEO</div><div class="lesson-time">8–10 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--green)">2.7</div><div class="lesson-name">Schedule & Batch System</div><div class="lesson-time">10–12 min</div></div>
+        <div class="lesson"><div class="lesson-num" style="color:var(--dim)">2.8</div><div class="lesson-name">Analytics & Iteration</div><div class="lesson-time">10–12 min</div></div>
+      </div>
+      <div class="outcome">
+        <div class="outcome-label" style="color:var(--blue)">By the end of Level 2</div>
+        <div class="outcome-text">You've posted at least 7 videos (one full week of consistency), your niche is defined, your profile is optimised, you know the 4-part video framework (Hook → Problem & Promise → Value Delivery → CTA), you can read your analytics and double down on winners. You're ready to monetize.</div>
+      </div>
+      <div class="tip tip-green">
+        <div class="tip-label">Key skills unlocked</div>
+        <div class="tip-text">Algorithm mastery (4 signals + distribution ladder) · Niche identity formula · 24-step US phone setup · 4-part video framework · 20 viral hook formulas · TikTok SEO & caption strategy · Weekly content map · Batch creation system · 4-scenario analytics decision matrix</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flow-connector">⬇</div>
+
+<!-- LEVEL 3 -->
+<div class="level-section" onclick="toggleLevel(this)">
+  <div class="level-header">
+    <div class="level-num" style="background:linear-gradient(135deg,var(--green),#00aa66)">L3</div>
+    <div class="level-info">
+      <div class="level-eyebrow" style="color:var(--green)">Monetization</div>
+      <div class="level-title">4 Income Paths</div>
+      <div class="level-sub">Choose how you want to make money — each path uses your Level 1 & 2 skills</div>
+    </div>
+    <div class="level-meta"><div class="level-pill">4 Paths</div></div>
+    <div class="level-chevron">▾</div>
+  </div>
+  <div class="level-body">
+    <div class="level-content">
+      <div class="lessons-label">Choose your path</div>
+      <div class="paths-grid">
+        <div class="path-card ts">
+          <div class="path-icon">🛒</div>
+          <div class="path-name">TikTok Shop Affiliate</div>
+          <div class="path-desc">Promote products with AI video. Viewer buys, you earn 10–50% commission. Zero inventory, zero shipping.</div>
+          <div class="path-phases">5 Phases · 20 Steps</div>
+          <div class="path-best">Best for: Product-focused niches</div>
+        </div>
+        <div class="path-card ag">
+          <div class="path-icon">🏢</div>
+          <div class="path-name">AI Marketing Agency</div>
+          <div class="path-desc">Sell AI content creation as a service to brands. From portfolio to first client to $2.5K/mo retainers.</div>
+          <div class="path-phases">7 Modules</div>
+          <div class="path-best">Best for: Client work & freelancing</div>
+        </div>
+        <div class="path-card dp">
+          <div class="path-icon">📦</div>
+          <div class="path-name">Digital Products</div>
+          <div class="path-desc">Create your own product (Path A) or promote others as affiliate (Path B). Both use your AI skills.</div>
+          <div class="path-phases">2 Paths · 5 Phases each</div>
+          <div class="path-best">Best for: Long-term business</div>
+        </div>
+        <div class="path-card af">
+          <div class="path-icon">🔗</div>
+          <div class="path-name">AI Wealth Group Affiliate</div>
+          <div class="path-desc">Promote this community with AI content. 40% recurring commission — $10.80/referral/month.</div>
+          <div class="path-phases">9 Steps</div>
+          <div class="path-best">Best for: Immediate $0-cost start</div>
+        </div>
+      </div>
+      <div class="outcome">
+        <div class="outcome-label" style="color:var(--green)">By the end of Level 3</div>
+        <div class="outcome-text">You have at least one active income stream using AI content skills. Whether it's affiliate commissions, client retainers, digital product sales, or recurring referral income — the system is live, generating revenue, and scalable.</div>
+      </div>
+      <div class="tip tip-green">
+        <div class="tip-label">Pro move</div>
+        <div class="tip-text">Start with the AI Wealth Group Affiliate (zero cost, immediate start) or TikTok Shop Affiliate (fast commissions) while building toward Digital Products or an Agency for long-term income. Stack paths over time — they all use the same Level 1 & 2 skills.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-brand">AI Wealth Group</div>
+  <div class="footer-tagline">Creation → Distribution → Money</div>
+</div>
+
+</div>
+
+<script>
+function toggleLevel(el){
+  const wasOpen = el.classList.contains('open');
+  // Don't close all — let multiple be open
+  el.classList.toggle('open');
+}
+</script>
+</body>
+</html>
